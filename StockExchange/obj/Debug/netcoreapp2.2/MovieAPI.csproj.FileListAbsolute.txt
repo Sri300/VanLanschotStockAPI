@@ -1,0 +1,17 @@
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\MovieAPI.deps.json
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\MovieAPI.runtimeconfig.json
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\MovieAPI.runtimeconfig.dev.json
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\MovieAPI.dll
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\bin\Debug\netcoreapp2.2\MovieAPI.pdb
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.AssemblyInfoInputs.cache
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.AssemblyInfo.cs
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.csproj.CoreCompileInputs.cache
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.RazorAssemblyInfo.cache
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.RazorAssemblyInfo.cs
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.RazorTargetAssemblyInfo.cache
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.dll
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.pdb
+C:\Users\SRIV395980\Downloads\AspNetCoreWebAPI-master\MovieAPI\obj\Debug\netcoreapp2.2\MovieAPI.genruntimeconfig.cache
