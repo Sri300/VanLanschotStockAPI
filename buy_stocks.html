@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+        $(document).ready(function () {
+		
+        	var appleStockPrice = 135.35;
+			$("#numberOfStocks").keyup(function(){
+			 	if(parseInt($("#numberOfStocks").val()) < 1)
+				{
+					alert("Invalid number of stocks");
+				} else {
+						
+						var totalPrice = appleStockPrice * parseInt($("#numberOfStocks").val());
+						totalPrice = Math.round(totalPrice * 100) / 100;
+						if($("#numberOfStocks").val() == "")
+						$('#totalPrice').text("");
+						else
+						$('#totalPrice').text(totalPrice);
+						
+						
+				}
+				
+			});
+              
+				
+			  $("#btnSubmit").click(function(){
+				if(confirm("You are going to place the following order \n Stock Name : APPL \n Total Quantity : "+$("#numberOfStocks").val()+"\nTotal Price : "+ $('#totalPrice').text())){
+
+					// execute order 
+					var numberOfStocks = $("#numberOfStocks").val();
+					var companyName = "AAPL";
+
+					// call API 
+
+					var endpoint = 'https://localhost:5001/api/stocks/buy/';
+
+					$.ajax({
+					    url: endpoint + numberOfStocks,
+					    contentType: "application/json",
+					    dataType: 'json',
+						type: 'GET',
+						crossDomain: true,
+						headers: {
+						  "accept": "application/json",
+						  "Access-Control-Allow-Origin":"*"
+					  },
+					    success: function(result){
+					       //alert(result);
+					        window.location.href = "success_page.html";
+					    },
+					    error: function(result){
+					        //alert(result);
+					        window.location.href = "error_page.html";
+					    }
+					})
+			    }
+			    else{
+			    }
+				});
+
+});
+</script>
+
+<style>
+
+		#totalPrice {
+			height: 1.5;
+			display:inline-block;
+		}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<h2>Purchase Apple Stocks</h2>
+		<h4>Enter the number of stocks:</h4>
+		<div class ="row">
+			<div class="col-xs-4">
+				<input type="text" id="numberOfStocks" class="form-control" />
+			</div>
+		</div>
+	  
+	    <div class ="row">
+			<div class="col-xs-4">
+				<label type="text">Total Price:</label>
+			</div>
+		</div>
+		 <div class ="row">
+			<div class="col-xs-4">
+				<div id="totalPrice"></div>
+			</div>
+		</div>
+		 <div class ="row">
+			<div class="col-xs-4">
+				<button  id="btnSubmit" type="button" class="btn btn-success">Buy Now</button>
+			</div>
+		</div>
+	 </div>
+</body>
+
+</html>
